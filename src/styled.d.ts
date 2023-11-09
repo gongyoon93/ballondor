@@ -2,20 +2,16 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
-    color: {
-      main: string;
-      second: string;
-      gray: string;
-      fontMain: string;
-      fontSecond: string;
+    red: string;
+    purple: string;
+    black: {
+      veryDark: string;
+      darker: string;
+      lighter: string;
     };
-
-    mixin: {
-      form: () => string;
-      label: (theme: DefaultTheme) => string;
-      input: () => string;
-      button: (theme: DefaultTheme) => string;
-      textarea: () => string;
+    white: {
+      darker: string;
+      lighter: string;
     };
   }
 }

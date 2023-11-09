@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <QueryClientProvider client={queryClient}>
           <ThemeProvider theme={style}>
             <GlobalStyle />
-            <Background />
+            {/* <Background /> */}
             <Content>
               {/* <Auth> */}
               <Component {...pageProps} />
